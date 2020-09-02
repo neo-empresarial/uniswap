@@ -141,7 +141,7 @@ def s_mechanismHub_UNI(_params, substep, sH, s, _input):
 
 # AUX
 
-def getInputPrice(input_amount, input_reserve, output_reserve, _params):
+def getOutputAmount(input_amount, input_reserve, output_reserve, _params):
     fee_numerator = _params[0]['fee_numerator']
     fee_denominator = _params[0]['fee_denominator']
     input_amount_with_fee = input_amount * fee_numerator
