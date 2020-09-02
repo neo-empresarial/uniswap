@@ -156,3 +156,12 @@ def getOutputAmount(input_amount, input_reserve, output_reserve, _params):
     numerator = input_amount_with_fee * output_reserve
     denominator = (input_reserve * fee_denominator) + input_amount_with_fee
     return int(numerator // denominator)
+
+
+def getExchangePrice(input_amount, input_reserve, output_reserve, _params):
+    fee_numerator = _params[0]['fee_numerator']
+    fee_denominator = _params[0]['fee_denominator']
+    input_amount_with_fee = input_amount * fee_numerator
+    numerator = input_amount_with_fee * output_reserve
+    denominator = (input_reserve * fee_denominator) + input_amount_with_fee
+    return input_amount  / (numerator // denominator)
