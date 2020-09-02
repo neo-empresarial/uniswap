@@ -141,6 +141,14 @@ def s_mechanismHub_UNI(_params, substep, sH, s, _input):
 
 # AUX
 
+'''
+    Function to adquire amount of EHT or Token that a transaction will give.
+    input_amount Amount of ETH or Tokens being sold.
+    input_reserve Amount of ETH or Tokens (input type) in exchange reserves.
+    output_reserve Amount of ETH or Tokens (output type) in exchange reserves.
+    Amount of ETH or Tokens bought.
+'''
+
 def getOutputAmount(input_amount, input_reserve, output_reserve, _params):
     fee_numerator = _params[0]['fee_numerator']
     fee_denominator = _params[0]['fee_denominator']
