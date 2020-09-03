@@ -142,7 +142,7 @@ def s_mechanismHub_UNI(_params, substep, sH, s, _input):
 # AUX
 
 '''
-    Function to adquire amount of EHT or Token that a transaction will give.
+    Function to acquire amount of EHT or Token that a transaction will give.
     input_amount Amount of ETH or Tokens being sold.
     input_reserve Amount of ETH or Tokens (input type) in exchange reserves.
     output_reserve Amount of ETH or Tokens (output type) in exchange reserves.
